@@ -222,10 +222,8 @@ class TextClassificationModel(nn.Module):
 
     Attributes:
          embedding (nn.EmbeddingBag): Embedding layer
-         fc1 (nn.Linear): Linear layer
+         lstm1 (nn.LSTM): LSTM layer
          do1 (nn.Dropout): Dropout layer
-         fc2 (nn.Linear): Linear layer
-         do2 (nn.Dropout): Dropout layer
          output (nn.Linear): Linear layer (Output)
     """
     def __init__(self, vocab_size, embed_dim, num_class):
